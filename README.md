@@ -40,7 +40,7 @@ _یک اسکریپت حرفه ای برای مدیریت SSH Tunnel  که با �
 ### Usages:
 📌 Install & Update:
 ```
-bash <(curl -Ls https://github.com/Quick-Server/Super-SSH-User-Manager/blob/main/install.sh --ipv4)
+bash <(curl -Ls https://github.com/Quick-Server/Super-SSH-User-Manager/raw/main/install.sh --ipv4)
 ```
 <b>Note:</b> Please do not use root username during installation.
 <br>
@@ -48,7 +48,7 @@ bash <(curl -Ls https://github.com/Quick-Server/Super-SSH-User-Manager/blob/main
 <br>
 📌 Voice & Video Call:
 ```
-bash <(curl -Ls https://github.com/Quick-Server/Super-SSH-User-Manager/blob/main/ssh-calls.sh --ipv4)
+bash <(curl -Ls https://github.com/Quick-Server/Super-SSH-User-Manager/raw/main/ssh-calls.sh --ipv4)
 ```
 <b>Note:</b> <b>Start:</b> systemctl start videocall and <b>Stop:</b> systemctl stop videocall
 <br>
@@ -56,7 +56,7 @@ bash <(curl -Ls https://github.com/Quick-Server/Super-SSH-User-Manager/blob/main
 <br>
 📌 Install SSL:
 ```
-bash <(curl -Ls https://github.com/Quick-Server/Super-SSH-User-Manager/blob/main/ssl.sh --ipv4)
+bash <(curl -Ls https://github.com/Quick-Server/Super-SSH-User-Manager/raw/main/ssl.sh --ipv4)
 ```
 <b>Note:</b> Before installing SSL, please use the installation command. 
 <br>
