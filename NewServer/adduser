@@ -1,0 +1,11 @@
+#!/bin/bash
+# By HamedAp 
+# Dozdi Nakon Lanati :) Adam Bash .
+
+sudo adduser $1  --shell /usr/sbin/nologin &
+wait
+
+sudo passwd $1 <<!
+$2
+$2
+!

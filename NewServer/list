@@ -1,0 +1,5 @@
+#!/bin/bash
+# By HamedAp 
+# Dozdi Nakon Lanati :) Adam Bash .
+
+cat /etc/passwd | grep /home/
