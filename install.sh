@@ -75,7 +75,7 @@ fi
 
 
 
-link=$(sudo curl -Ls "https://api.github.com/repos/InternetCables/SSH-UserManagement/releases/latest" | grep '"browser_download_url":' | sed -E 's/.*"([^"]+)".*/\1/')
+link=$(sudo curl -Ls "https://api.github.com/repos/Quick-Server/Super-SSH-User-Manager/releases/latest" | grep '"browser_download_url":' | sed -E 's/.*"([^"]+)".*/\1/')
 sudo wget -O /var/www/html/update.zip $link
 sudo unzip -o /var/www/html/update.zip -d /var/www/html/ &
 wait
@@ -130,8 +130,8 @@ sed -i 's/extension=intl/;extension=intl/' ${PHP_INI}
 elif command -v yum >/dev/null; then
 yum update -y
 
-sudo yum -y install https://github.com/InternetCables/SSH-UserManagement/raw/main/Requirements/epel-release-latest-7.noarch.rpm
-sudo yum -y install https://github.com/InternetCables/SSH-UserManagement/raw/main/Requirements/remi-release-7.rpm
+sudo yum -y install https://github.com/Quick-Server/Super-SSH-User-Manager/raw/main/Requirements/epel-release-latest-7.noarch.rpm
+sudo yum -y install https://github.com/Quick-Server/Super-SSH-User-Manager/raw/main/Requirements/remi-release-7.rpm
 sudo yum -y install yum-utils
 yum remove php -y
 yum autoremove -y
@@ -143,7 +143,7 @@ systemctl restart mariadb &
 wait
 systemctl enable mariadb &
 wait
-link=$(sudo curl -Ls "https://api.github.com/repos/InternetCables/SSH-UserManagement/releases/latest" | grep '"browser_download_url":' | sed -E 's/.*"([^"]+)".*/\1/')
+link=$(sudo curl -Ls "https://api.github.com/repos/Quick-Server/Super-SSH-User-Manager/releases/latest" | grep '"browser_download_url":' | sed -E 's/.*"([^"]+)".*/\1/')
 sudo wget -O /var/www/html/update.zip $link
 sudo unzip -o /var/www/html/update.zip -d /var/www/html/ &
 wait
@@ -205,14 +205,14 @@ IonCube=$(php -v)
 if [[ $IonCube == *"PHP Loader v12.0.5"* ]]; then
   echo "IonCube Is Installed :)"
 else
-bash <(curl -Ls https://raw.githubusercontent.com/InternetCables/SSH-UserManagement/main/Requirements/ioncube.sh --ipv4)
+bash <(curl -Ls https://raw.githubusercontent.com/Quick-Server/Super-SSH-User-Manager/main/Requirements/ioncube.sh --ipv4)
 fi
 
 Nethogs=$(nethogs -V)
 if [[ $Nethogs == *"version 0.8.7"* ]]; then
   echo "Nethogs Is Installed :)"
 else
-bash <(curl -Ls https://raw.githubusercontent.com/InternetCables/SSH-UserManagement/main/Requirements/nethogs.sh --ipv4)
+bash <(curl -Ls https://raw.githubusercontent.com/Quick-Server/Super-SSH-User-Manager/main/Requirements/nethogs.sh --ipv4)
 fi
 
 file=/etc/systemd/system/videocall.service

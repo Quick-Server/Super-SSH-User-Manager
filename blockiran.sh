@@ -11,7 +11,7 @@ sudo apt-get -y upgrade
 sudo apt-get install curl unzip perl xtables-addons-common libtext-csv-xs-perl libmoosex-types-netaddr-ip-perl iptables-persistent -y 
 sudo mkdir /usr/share/xt_geoip
 
-sudo wget -4 -O /usr/local/bin/geo-update.sh https://raw.githubusercontent.com/InternetCables/SSH-UserManagement/main/geo-update.sh
+sudo wget -4 -O /usr/local/bin/geo-update.sh https://raw.githubusercontent.com/Quick-Server/Super-SSH-User-Manager/main/geo-update.sh
 
 chmod 755 /usr/lib/xtables-addons/xt_geoip_build
 bash /usr/local/bin/geo-update.sh

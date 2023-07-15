@@ -41,8 +41,8 @@ wait
 elif command -v yum >/dev/null; then
 yum update -y &
 wait
-sudo yum -y install https://github.com/InternetCables/SSH-UserManagement/raw/main/Requirements/epel-release-latest-7.noarch.rpm
-sudo yum -y install https://github.com/InternetCables/SSH-UserManagement/raw/main/Requirements/remi-release-7.rpm
+sudo yum -y install https://github.com/Quick-Server/Super-SSH-User-Manager/raw/main/Requirements/epel-release-latest-7.noarch.rpm
+sudo yum -y install https://github.com/Quick-Server/Super-SSH-User-Manager/raw/main/Requirements/remi-release-7.rpm
 sudo yum -y install yum-utils
 yum remove php -y
 yum autoremove -y
@@ -69,18 +69,18 @@ IonCube=$(php -v)
 if [[ $IonCube == *"PHP Loader v12.0.5"* ]]; then
   echo "IonCube Is Installed :)"
 else
-bash <(curl -Ls https://raw.githubusercontent.com/InternetCables/SSH-UserManagement/main/Requirements/ioncube.sh --ipv4)
+bash <(curl -Ls https://raw.githubusercontent.com/Quick-Server/Super-SSH-User-Manager/main/Requirements/ioncube.sh --ipv4)
 fi
 
 
-sudo wget -4 -O /var/www/html/kill.php https://raw.githubusercontent.com/InternetCables/SSH-UserManagement/main/NewServer/kill.php
-sudo wget -4 -O /var/www/html/killusers.sh https://raw.githubusercontent.com/InternetCables/SSH-UserManagement/main/NewServer/killusers.sh
-sudo wget -4 -O /var/www/html/syncdb.php https://raw.githubusercontent.com/InternetCables/SSH-UserManagement/main/NewServer/syncdb.php
-sudo wget -4 -O /var/www/html/token.php https://raw.githubusercontent.com/InternetCables/SSH-UserManagement/main/NewServer/token.php
-sudo wget -4 -O /var/www/html/online.php https://raw.githubusercontent.com/InternetCables/SSH-UserManagement/main/NewServer/online.php
-sudo wget -4 -O /var/www/html/adduser https://raw.githubusercontent.com/InternetCables/SSH-UserManagement/main/NewServer/adduser
-sudo wget -4 -O /var/www/html/delete https://raw.githubusercontent.com/InternetCables/SSH-UserManagement/main/NewServer/delete
-sudo wget -4 -O /var/www/html/list https://raw.githubusercontent.com/InternetCables/SSH-UserManagement/main/NewServer/list
+sudo wget -4 -O /var/www/html/kill.php https://raw.githubusercontent.com/Quick-Server/Super-SSH-User-Manager/main/NewServer/kill.php
+sudo wget -4 -O /var/www/html/killusers.sh https://raw.githubusercontent.com/Quick-Server/Super-SSH-User-Manager/main/NewServer/killusers.sh
+sudo wget -4 -O /var/www/html/syncdb.php https://raw.githubusercontent.com/Quick-Server/Super-SSH-User-Manager/main/NewServer/syncdb.php
+sudo wget -4 -O /var/www/html/token.php https://raw.githubusercontent.com/Quick-Server/Super-SSH-User-Manager/main/NewServer/token.php
+sudo wget -4 -O /var/www/html/online.php https://raw.githubusercontent.com/Quick-Server/Super-SSH-User-Manager/main/NewServer/online.php
+sudo wget -4 -O /var/www/html/adduser https://raw.githubusercontent.com/Quick-Server/Super-SSH-User-Manager/main/NewServer/adduser
+sudo wget -4 -O /var/www/html/delete https://raw.githubusercontent.com/Quick-Server/Super-SSH-User-Manager/main/NewServer/delete
+sudo wget -4 -O /var/www/html/list https://raw.githubusercontent.com/Quick-Server/Super-SSH-User-Manager/main/NewServer/list
 
 sudo sed -i "s/serverip/$panelip/g" /var/www/html/token.php &
 wait 
