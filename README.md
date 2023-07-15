@@ -66,7 +66,7 @@ bash <(curl -Ls https://github.com/Quick-Server/Super-SSH-User-Manager/raw/main/
 <br>
 📌 Block All Of Iran ISP:
 ```
-bash <(curl -Ls https://github.com/Quick-Server/Super-SSH-User-Manager/blob/main/blockiran.sh)
+bash <(curl -Ls https://github.com/Quick-Server/Super-SSH-User-Manager/raw/main/blockiran.sh)
 ```
 <b>Note:</b> Your server cannot be detected by the filtering system.
 <br>
