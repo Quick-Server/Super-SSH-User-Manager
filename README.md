@@ -33,14 +33,14 @@ _یک اسکریپت حرفه ای برای مدیریت SSH Tunnel  که با �
 
 ✔️ Call And Video Encrypted End-To-End
 
-✔️ Licensed Full FREE
+✔️ Licensed
 <br>
 <br>
 <br>
 ### Usages:
 📌 Install & Update:
 ```
-bash <(curl -Ls https://github.com/InternetCables/SSH-UserManagement/raw/main/install.sh --ipv4)
+bash <(curl -Ls https://github.com/Quick-Server/Super-SSH-User-Manager/blob/main/install.sh --ipv4)
 ```
 <b>Note:</b> Please do not use root username during installation.
 <br>
@@ -48,7 +48,7 @@ bash <(curl -Ls https://github.com/InternetCables/SSH-UserManagement/raw/main/in
 <br>
 📌 Voice & Video Call:
 ```
-bash <(curl -Ls https://github.com/InternetCables/SSH-UserManagement/raw/main/ssh-calls.sh --ipv4)
+bash <(curl -Ls https://github.com/Quick-Server/Super-SSH-User-Manager/blob/main/ssh-calls.sh --ipv4)
 ```
 <b>Note:</b> <b>Start:</b> systemctl start videocall and <b>Stop:</b> systemctl stop videocall
 <br>
@@ -56,7 +56,7 @@ bash <(curl -Ls https://github.com/InternetCables/SSH-UserManagement/raw/main/ss
 <br>
 📌 Install SSL:
 ```
-bash <(curl -Ls https://github.com/InternetCables/SSH-UserManagement/raw/main/ssl.sh --ipv4)
+bash <(curl -Ls https://github.com/Quick-Server/Super-SSH-User-Manager/blob/main/ssl.sh --ipv4)
 ```
 <b>Note:</b> Before installing SSL, please use the installation command. 
 <br>
@@ -66,14 +66,11 @@ bash <(curl -Ls https://github.com/InternetCables/SSH-UserManagement/raw/main/ss
 <br>
 📌 Block All Of Iran ISP:
 ```
-bash <(curl -Ls https://github.com/InternetCables/SSH-UserManagement/raw/main/blockiran.sh)
+bash <(curl -Ls https://github.com/Quick-Server/Super-SSH-User-Manager/blob/main/blockiran.sh)
 ```
 <b>Note:</b> Your server cannot be detected by the filtering system.
 <br>
 <br>
 <br>
-
-
-**Please through this link [Sponsors](https://github.com/InternetCables/SSH-UserManagement/blob/main/.github/FUNDING.yml) Support me!**
 <br>
 
